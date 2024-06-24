@@ -1,4 +1,11 @@
 <template>
+
+  <div class="header-btn">
+    <button class="btn-style"> Usuários </button>
+    <button class="btn-style"> Livros </button>
+    <button class="btn-style"> Editoras </button>
+    <button class="btn-style"> Alugueis </button>
+  </div>
   <Livros />
 </template>
 
@@ -22,4 +29,21 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+  .header-btn{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(62, 62, 116);
+    justify-content: center;
+  }
+  
+  .btn-style{
+    padding: 20px 50px;
+    background-color: rgb(62, 62, 116);
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+
+
 </style>
